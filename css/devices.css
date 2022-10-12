@@ -1,0 +1,40 @@
+/* Devices */ 
+
+
+
+
+
+.device_item {
+    position: relative;
+}
+
+.device_content{
+    position: absolute;
+    top: 23px;
+    left: 267px;
+    border-radius: 10px;
+    max-width: 640px;
+
+}
+
+.device {
+    position: absolute;
+    top: 220px;
+    right: 200px;
+    z-index: 3;
+}
+
+.tablet {
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+.accordeon_item {
+    display: flex;
+    margin-top: 84px;
+
+}
+
+

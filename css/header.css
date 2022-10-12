@@ -1,0 +1,33 @@
+/* Header */
+
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+
+}
+
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 30px;
+
+}
+
+.header_img {
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 35px;
+}

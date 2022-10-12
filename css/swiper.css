@@ -1,0 +1,81 @@
+/* Slider-swiper*/ 
+
+.slider_services {
+    background: #F8F8F8;
+}
+
+
+.swiper {
+    width: 100%;
+    margin-top: 115px;
+    
+    
+  }
+  .swiper--inner {
+    margin: 0;
+  }
+
+
+.swiper-slide {
+    padding: 30px;
+}
+  .swiper-wrapper {
+    padding: 40px;
+
+  }
+
+  .swiper-content {
+    display: flex;
+  }
+
+
+  
+
+  
+  .swiper-slide {
+
+    align-items: center;
+
+ 
+  }
+
+.slider_text {
+position: relative;
+max-width: 770px;
+margin: auto;
+font-style: italic;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #A9AFB1;
+
+
+  }
+
+  .slider_text::after {
+ 
+    display: block;
+    content: "";
+    width: 100%;
+    max-width: 70px;
+    height: 4px;
+    background: #F38281;
+    margin: 30px 0 0;
+
+    
+
+  }
+
+
+.slider_name {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  font-family: 'Kaushan Script';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+
+

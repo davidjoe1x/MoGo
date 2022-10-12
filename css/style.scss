@@ -1,0 +1,206 @@
+
+@import url(/bootstrap/bootstrap.min.css);
+@import url(/css/about.css);
+@import url(/css/header.css);
+@import url(/css/intro.css);
+@import url(/css/nav.css);
+@import url(/css/services.css);
+@import url(/css/stat.css);
+@import url(/css/devices.css);
+@import url(/css/accordeon.css);
+@import url(/css/team.css);
+@import url(/css/swiper-bundle.min.css);
+@import url(/css/swiper.css);
+@import url(/css/works.css);
+@import url(/css/clients.css);
+@import url(/css/stories.css);
+@import url(/css/news.css);
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-Regular.woff);
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-Medium.woff);
+    font-weight: 500;
+
+}
+
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-SemiBold.woff);
+    font-weight: 600;
+
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Bold.woff);
+    font-weight: 700;
+
+}
+
+
+@font-face {
+    font-family:  'Raleway';
+    src: url(../fonts/Raleway-Black.woff);
+    font-weight: 900;
+
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.woff);
+    font-weight: 700;
+
+}
+
+
+
+@font-face {
+    font-family:'Kaushan Script';
+    src: url(../fonts/KaushanScript-Regular.woff);
+    font-weight: 400;
+
+}
+
+
+/* Container */ 
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+@mixin line_title {
+    display: block;
+    content: "";
+    width: 100%;
+    max-width: 170px;
+    height: 4px;
+    background: #F38281;
+    margin: 50px auto;
+}
+
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family:'Raleway', sans-serif;
+    font-size: 18px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+/* Section */
+.section_item {
+    padding: 80px 0;
+}
+.section_head {
+    text-align: center;
+}
+
+.section_title {
+color: #2D3033;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+text-transform: uppercase;
+}
+
+
+.section_title::after {
+    @include line_title;
+
+}
+
+.section_subtitle {
+font-family: 'Kaushan Script';
+font-weight: 400;
+font-size: 30px;
+line-height: 44px;
+margin-bottom: 40px;
+
+}
+
+.section_text {
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
+.section--devices {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ),
+     url(/assets/images/devices/bg-devices.jpg) center no-repeat;
+     background-size: cover;
+     width: 100%;
+     max-height: 870px;
+
+
+    
+}
+
+.section--clients{
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ),
+     url(/assets/images/clients/bg-clients.jpg) center no-repeat;
+     background-size: cover;
+     width: 100%;
+
+}
+
+.section--news {
+    background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) ),
+     url(/assets/images/news/bg-news.jpg) center no-repeat;
+     background-size: cover;
+     width: 100%;
+     padding: 55px 0;
+
+}
+
+
+ 
+/* Card */
+
+.card_text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+}
+
+
+.card_name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    }
+    
+    
+
+
+

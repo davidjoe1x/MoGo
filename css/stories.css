@@ -1,0 +1,64 @@
+
+/* Stories */
+.stories {
+    display: flex;
+    column-gap: 30px;
+}
+
+
+.stories_item {
+    position: relative;
+}
+
+.stories_item img {
+    margin-bottom: 30px;
+}
+
+
+.date {
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    width: 80px;
+    height: 80px;
+    background-color: #95E1D3;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    
+    
+    
+}
+
+.date span {
+font-weight: 700;
+font-size: 36px;
+line-height: 30px;
+}
+
+
+.stories_bottom {
+ display: flex;
+ align-items: center;
+margin-top: 29px;
+
+
+
+
+
+}
+
+
+.stories_bottom  img {
+    margin: 0 22px;
+}
+
+.stories_bottom  img:first-child {
+    margin-left: 0;
+}
+
+.amount {
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+}
