@@ -1,0 +1,90 @@
+/* Bootstrap Accordion */
+
+
+.accordeon_item {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 84px;
+
+
+}
+
+.accordion-item {
+  margin-top: 30px;
+  border: 0 !important;
+}
+.accordion-item:first-child {
+  margin-top: 0;
+}
+
+
+.accordion-button {
+  border: 1px solid #C6CBCD !important;
+}
+
+
+
+.accordion {
+  min-width: 570px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.accordion-img {
+  margin-right: 45px;
+}
+
+
+
+.accordion-title{
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+}
+
+
+
+
+
+
+/* Scrollbar styles */
+
+.accordion-body::-webkit-scrollbar-thumb {
+  background-color: #95E1D3;
+  width: 7px;
+
+}
+
+/* Works on Chrome, Edge, and Safari */
+.accordion-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+.accordion-body::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+
+.accordion-body{
+  display: block;
+  list-style: none;
+  border: 1px solid #C6CBCD;
+  color: #4f4f4f;
+  padding:20px;
+  max-height: 193px;
+  overflow-y: scroll;
+  color: #2D3033;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  
+}

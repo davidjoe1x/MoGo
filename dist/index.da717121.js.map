@@ -1,1 +1,0 @@
-{"mappings":"AACA,CAAC,CAAC,WAAW;IAET,CAAC,CAAC,gBAAgB,CAAC,CAAC,KAAK,EAAE,CAAC;CAE/B,CAAC","sources":["slick/main.js"],"sourcesContent":["\r\n$(function() {\r\n    \r\n    $('.review_slider').slick();\r\n\r\n})"],"names":[],"version":3,"file":"index.da717121.js.map","sourceRoot":"/__parcel_source_root/"}

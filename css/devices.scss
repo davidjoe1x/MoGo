@@ -1,0 +1,42 @@
+/* Devices */ 
+
+
+
+
+
+.device {
+    position: relative;
+
+&_content {
+    
+    position: absolute;
+    top: 23px;
+    left: 267px;
+    border-radius: 10px;
+    max-width: 640px;
+}
+
+&_phone {
+    position: absolute;
+    top: 220px;
+    right: 200px;
+    z-index: 3;
+}
+
+
+&_tablet {
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+}
+
+
+
+
+
+
+
+

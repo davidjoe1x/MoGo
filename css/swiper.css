@@ -8,7 +8,7 @@
 .swiper {
     width: 100%;
     margin-top: 115px;
-    
+   
     
   }
   .swiper--inner {
@@ -30,7 +30,9 @@
 
 
   
-
+.swiper-pagination {
+  margin: auto;
+}
   
   .swiper-slide {
 
@@ -78,4 +80,6 @@ color: #A9AFB1;
 }
 
 
-
+.swiper-pagination-bullet {
+  margin: 0 15px !important;
+}

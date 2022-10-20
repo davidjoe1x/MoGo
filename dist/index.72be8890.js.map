@@ -1,1 +1,0 @@
-{"mappings":"AAAA,CAAC,CAAC,aAAa,CAAC,CAAC,KAAK,CAAC;IACnB,GAAG,EAAE,IAAI;CACV,CAAC,CAAC","sources":["js/main.js"],"sourcesContent":["$('.rev_slider').slick({\r\n    rtl: true\r\n  });"],"names":[],"version":3,"file":"index.72be8890.js.map","sourceRoot":"/__parcel_source_root/"}

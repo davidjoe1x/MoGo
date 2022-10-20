@@ -1,0 +1,45 @@
+/* Clients */
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    &_item {
+    display: flex;
+    width: 47%;
+    margin-bottom: 42px;
+    }
+
+
+    &_img {
+        margin-right: 50px;
+    }
+}
+
+
+
+
+.card_job {
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+margin-top: 10px;
+
+
+&::after {
+    display: block;
+    content: "";
+    width: 100%;
+    max-width: 70px;
+    height: 4px;
+    background: #F38281;
+    margin:30px 0 50px 0;
+}
+
+
+}
+
+
+

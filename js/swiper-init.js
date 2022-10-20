@@ -1,12 +1,18 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
 
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable:true,
+      dynamicBullets: true,
+      dynamicMainBullets: 4,
+      autoplay: {
+        delay: 3000,
+      },
     },
   
     // Navigation arrows
@@ -23,6 +29,8 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
       delay: 3000,
     },
+
+
 
 
 

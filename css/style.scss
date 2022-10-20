@@ -1,18 +1,17 @@
-
 @import url(/bootstrap/bootstrap.min.css);
-@import url(/css/about.css);
-@import url(/css/header.css);
-@import url(/css/intro.css);
-@import url(/css/nav.css);
-@import url(/css/services.css);
-@import url(/css/stat.css);
-@import url(/css/devices.css);
-@import url(/css/accordeon.css);
+@import url(/css/about.scss);
+@import url(/css/header.scss);
+@import url(/css/intro.scss);
+@import url(/css/nav.scss);
+@import url(/css/services.scss);
+@import url(/css/stat.scss);
+@import url(/css/devices.scss);
+@import url(/css/accordeon.scss);
 @import url(/css/team.css);
 @import url(/css/swiper-bundle.min.css);
 @import url(/css/swiper.css);
-@import url(/css/works.css);
-@import url(/css/clients.css);
+@import url(/css/works.scss);
+@import url(/css/clients.scss);
 @import url(/css/stories.css);
 @import url(/css/news.css);
 
@@ -116,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Section */
-.section_item {
+.section-item {
     padding: 80px 0;
 }
 .section_head {
@@ -129,6 +128,7 @@ font-weight: 900;
 font-size: 36px;
 line-height: 42px;
 text-transform: uppercase;
+margin-top: 30px;
 }
 
 
@@ -142,7 +142,6 @@ font-family: 'Kaushan Script';
 font-weight: 400;
 font-size: 30px;
 line-height: 44px;
-margin-bottom: 40px;
 
 }
 
@@ -182,9 +181,9 @@ line-height: 21px;
 
 
  
-/* Card */
 
-.card_text{
+
+.text{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -192,7 +191,7 @@ line-height: 21px;
 }
 
 
-.card_name {
+.title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -201,6 +200,214 @@ line-height: 21px;
     }
     
     
+
+
+/* Blog */
+.blog {
+    background: #F8F8F8;
+}
+
+    .blog_item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 78px;
+ 
+        
+
+
+    }
+
+    .column {
+        width: 100%;
+    }
+
+  
+
+ .blog_feed {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 15px;
+ }
+
+
+
+.inst_link {
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+text-decoration: underline;
+text-transform: uppercase;
+margin-top: 40px;
+}
+    
+ 
+
+ .inst--column {
+    display: flex;
+ }
+
+    .blog_content {
+        display: flex;
+        flex-direction: column;
+        max-width:34%;
+        
+
+
+
+        
+    }
+
+    
+
+    .logo--bottom {
+        color: #C6CBCD;
+        font-size: 50px;
+        font-weight: 700;
+        
+    }
+
+
+    .card--blog {
+        color:#C6CBCD;
+        line-height: 21px;
+    }
+
+
+   
+    .text strong {
+        font-size: 35px;
+    }
+
+    .card--followers::after{
+        display: block;
+        width: 100%;
+        content: "";
+        height: 1px;
+        background-color:  #C6CBCD;
+        margin: 20px 0;
+
+    }
+   
+
+    .card--followers span{
+        font-style: italic;
+        text-transform: uppercase;
+        
+    }
+
+
+    .blog_socials{
+        display: flex;
+        align-items: center;
+        
+    }
+
+
+.blog_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    }
+
+
+  .social_item {
+    display: flex;
+  }
+
+.social_item img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.social_item img:last-child{
+    margin-right: 0;
+}
+
+.social--text{
+    color: #C6CBCD;
+    font-style: italic;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+margin: 0 30px 0 0;
+}
+
+
+
+
+
+
+.blog_form {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+}
+
+.email {
+    width: 100%;
+    max-width: 370px;
+    border: 1px solid #C6CBCD;
+    padding: 10px 0;
+    text-align: center;
+    color: #C6CBCD;
+    border-right: 0;
+
+}
+
+.subscribe {
+    width: 100%;
+    max-width: 134px;
+    border: 1px solid #C6CBCD;
+    background: #95E1D3;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    border-left: 0;
+    color: #fff;
+}
+
+
+
+
+
+/* Footer */
+.copyright::before{
+    display: block;
+    content: "";
+    background: #C6CBCD;
+    height: 1px;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+
+.copyright{
+text-align: center;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+padding: 20px 0;
+
+
+   
+}
+
+
+
+.copyright span {
+    text-transform: uppercase;
+}
+
+
+.tittle--h4 {
+    padding-bottom: 40px;
+    
+}
+
 
 
 

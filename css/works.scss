@@ -1,0 +1,59 @@
+
+/* Works */
+.works {
+  margin-top: 72px;
+  display: flex;
+
+  
+&_item {
+  position: relative;
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+
+&:hover .works_img {
+  opacity: .1;
+}
+
+
+&:hover .about_cover {
+  opacity: 1;
+}
+
+
+}
+
+
+
+}
+
+
+
+
+
+.about_img:hover .about_cover {
+  opacity: 1;
+}
+
+.works_column{
+  flex: 1 1 0;
+
+}
+
+.works_img  {
+  width: 100%;
+  object-fit: cover;	
+  display: block;
+  transition: opacity .2s linear;
+
+}
+
+
+
+
+
+
+
+
+
+.works_icon {
+  padding-bottom: 60px;
+}
