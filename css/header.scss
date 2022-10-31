@@ -1,3 +1,5 @@
+@import '/css/style.scss';
+
 /* Header */
 
 
@@ -7,29 +9,49 @@
     right: 0;
     left: 0;
     z-index: 1;
+    color: var(--white-color);
 
 
-   &_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    margin-top: 30px;
+    &-inner {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+
+    &-burger {
+        height: 18px;
+        width: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        div {
+            height: 3px;
+            background: #fff;
+            width: 100%;
+            transition: .3s ease;
+            display: none;
+          }
+    }
+
+
+
+
+    .logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+    }
 
 }
 
-&_img {
-    margin: 0 20px;
-    vertical-align: top;
-}
-
-
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 35px;
-}
-
-}
-
-
+  @media screen and (max-width: 320px) {
+  
+  
+    .header-burger div {
+      display: block;
+    }
+  }

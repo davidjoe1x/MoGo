@@ -1,60 +1,61 @@
-/* Intro */ 
+@import '/css/style.scss';
+
+/* Intro */
 .intro {
 
     width: 100%;
     background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%),
-    url(/assets/images/bg-intro.jpg) center no-repeat;
+        url(/assets/images/bg-intro.jpg) center no-repeat;
     background-size: cover;
 
-&_inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 180px;
-}
-
-&_subtitle{
-    font-family: 'Kaushan Script';
-    color: #fff;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 93px;
-    text-align: center;
-    }
-
-&_title_item{
-    width: 100%;
-    max-width: 880px;
-    margin: auto;
-}
-
-&_title {
-    font-family: 'Montserrat';
-    color:#fff;
-    font-weight: 700;
-    font-size: 144px;
-    line-height: 176px;
-    text-align:center;
-    text-transform: uppercase;
-
-
-    &::after {
-        display: block;
-        content: "";
+    &-inner {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
-        max-width: 170px;
-        height: 3px;
-        background: #fff;
-        margin: 60px auto;
+        margin: 0 auto;
+        padding-top: 180px;
+        color: var(--white-color);
+        text-align: center;
     }
 
+    &_subtitle {
+        font-family: 'Kaushan Script';
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 93px;
+        
     }
- 
+
+    &_title_item {
+        width: 100%;
+        max-width: 880px;
+        margin: auto;
+    }
+
+    &_title {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 176px;
+        text-transform: uppercase;
 
 
- &_title span {
+        &::after {
+            display: block;
+            content: "";
+            width: 100%;
+            max-width: 170px;
+            height: 3px;
+            background: var(--white-color);
+            margin: 60px auto;
+        }
+
+    }
+
+
+
+    &_title span {
         margin-right: 90px;
     }
 
@@ -64,9 +65,8 @@
         display: block;
         width: 100%;
         max-width: 370px;
-        border: 4px solid #FFF;
+        border: 4px solid var(--white-color);
         background: transparent;
-        color: #FFF;
         padding: 20px;
         text-transform: uppercase;
         font-weight: 700;
@@ -74,16 +74,17 @@
         line-height: 28px;
         margin: 0 auto;
         transition: background .1s linear, color .1s linear;
+        color:var(--white-color);
 
 
         &:hover {
-            background-color: #FFF;
+            background-color: var(--white-color);
             color: #E4BE8D;
         }
 
 
-        &:active{
-            background-color: #FFF;
+        &:active {
+            background-color: var(--white-color);
             color: #E4BE8D;
             border: 4px solid #E4BE8D;
         }
@@ -94,20 +95,22 @@
 
 
 
+
+
 .slider {
-    display: flex;
+    @include flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    --slider-text-color: #F9EFCF;
 
 
 
 
-    &_item{
+    &_item {
         text-transform: uppercase;
-    line-height: 42px;
-    color: #FFF;
-    opacity: 0.7;
-   margin: auto;
+        line-height: 42px;
+        opacity: 0.7;
+        margin: auto;
     }
 
 
@@ -123,15 +126,64 @@
 
 
 
-/* media */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width:320px) {
+
+
+    .intro {
+
+        &-inner {
+            max-width: 280px;
+            padding-bottom: 30px;
+
+        }
+
+
+
+        &_title {
+
+            font-size: 48px;
+            line-height: 59px;
+        }
+
+        &_subtitle {
+
+            font-size: 36px;
+            line-height: 52px;
+        }
+
+
+        &_button {
+
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+
+
+        &-inner .swiper-slide {
+            padding: 20px 0;
+        }
+
+
+        &-inner {
+            padding-top: 120px;
+
+        }
+
+
+
+    }
+
+
+    .slider {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
 
 
 
 }
-    
-
-
-
-

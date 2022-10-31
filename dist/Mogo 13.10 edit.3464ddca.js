@@ -535,4 +535,4 @@ function hmrAcceptRun(bundle, id) {
 
 },{}]},["c4xoB","j4kuM"], "j4kuM", "parcelRequirea595")
 
-//# sourceMappingURL=Mogo 20.10 edit.3464ddca.js.map
+//# sourceMappingURL=Mogo 13.10 edit.3464ddca.js.map

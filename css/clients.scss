@@ -1,45 +1,77 @@
+@import '/css/style.scss';
 /* Clients */
 .clients {
-    display: flex;
+    @include flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 
-    &_item {
-    display: flex;
-    width: 47%;
-    margin-bottom: 42px;
+
+    &-item {
+        @include flex;
+        width: 50%;
+        margin-bottom: 42px;
+
     }
 
 
     &_img {
         margin-right: 50px;
     }
+
+
+    &_job {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        margin-top: 10px;
+
+        &:after{
+        display: block;
+        content: "";
+        width: 100%;
+        max-width: 70px;
+        height: 4px;
+        background: #F38281;
+        margin: 30px 0 50px 0;
+    }
+    }
 }
 
 
 
 
-.card_job {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-transform: uppercase;
-margin-top: 10px;
 
 
-&::after {
-    display: block;
-    content: "";
-    width: 100%;
-    max-width: 70px;
-    height: 4px;
-    background: #F38281;
-    margin:30px 0 50px 0;
+
+
+
+@media screen and (max-width: 320px) {
+
+    .clients {
+        &_desc {
+            max-width: 288px;
+        }
+        &-item {
+            width: 100%;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        &_img {
+            margin-right: 0;
+            margin: 30 auto;
+        
+        img {
+            max-width: 89px;
+        }
+    }
+
+    &_job:after {
+        margin: 22px auto;
+    }
+    }
+
+
 }
-
-
-}
-
-
-

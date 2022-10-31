@@ -1,80 +1,49 @@
+@import '/css/style.scss';
+
 /* About */
-.about {
-  display: flex;
+.about-item {
+  @include flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 58px auto;
-
-  &_img {
-    display: block;
-    transition: transform 0.1s linear;
-    background: linear-gradient(
-      360deg,
-      rgba(237, 215, 137, 0.9) 0%,
-      rgba(233, 130, 131, 0.9) 100%
-    );
-
-    img {
-      display: block;
-      transition: opacity 0.1s linear;
-    }
-  }
-
-  &_item {
-    position: relative;
-    background-color: #95e1d3;
-
-    &:hover .about_cover {
-      opacity: 1;
-    }
-
-    &:hover .about_img img {
-      opacity: 0.1;
-    }
-
-    &:hover .about_img {
-      transform: translate3d(-10px, -10px, 0);
-    }
-  }
+}
 
 
-  &_cover {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 2;
-    transform: translate3d(0, -50%, 0);
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.1s linear;
-    &--show {
-      opacity: 1;
-    }
-  }
+.cover-item {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  opacity: 0;
+  transition: opacity 0.1s linear;
 }
 
 
 
 
 .about_social {
-  display: flex;
+  @include flex;
   justify-content: center;
 
 }
-.about_social img{
+
+.about_social img {
   opacity: 1 !important;
 
 
 
-  
+
 }
 
-.team_item {
-  padding:  5px;
+.about_social_item {
+  padding: 5px;
   margin-right: 1px;
-  background-color: #F9EFCF;
+  background-color: var(--slider-text-color);
   width: 42px;
   height: 42px;
   padding: 5px 0;
@@ -86,8 +55,8 @@
 }
 
 
-.team_item:hover{
-  background-color: #F38281;
+.about_social_item:hover {
+  background-color: var(--social-item-hover);
   border: 0;
 
 }
@@ -99,12 +68,12 @@
 
 
 
-.team_item img {
+.about_social_itemimg {
   margin: auto;
 }
 
-.team_item img:hover {
-  fill: #fff !important; 
+.about_social_item img:hover {
+  fill: #fff !important;
 }
 
 
@@ -113,14 +82,68 @@
 
 }
 
-#instagram:hover{
+#instagram:hover {
   fill: #fff;
 }
 
-#pinterest:hover{
+#pinterest:hover {
   fill: #fff;
 }
 
-#twitter:hover{
+#twitter:hover {
   fill: #fff;
+}
+
+
+
+
+
+
+.wrapper {
+  position: relative;
+  background-color: var(--green-bg);
+  width: 33%;
+  max-width: 370px;
+
+
+
+
+  &:hover .cover-item {
+    opacity: 1;
+  }
+
+  &:hover .wrapper_img img {
+    opacity: 0.1;
+  }
+
+  &:hover .wrapper_img {
+    transform: translate3d(-10px, -10px, 0);
+  }
+
+
+  &_img {
+    @include gradient;
+    display: block;
+    transition: transform 0.1s linear;
+  }
+
+  &-hover-img {
+
+    display: block;
+    transition: opacity 0.1s linear;
+    width: 100%;
+  }
+
+}
+
+
+
+
+@media screen and (max-width:320px) {
+
+  .wrapper {
+    width: 100%;
+    margin-bottom: 16px;
+
+  }
 }

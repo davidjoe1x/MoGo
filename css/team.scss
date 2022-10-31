@@ -1,0 +1,198 @@
+@import '/css/style.scss';
+/* Team + Partners */
+.card--team {
+   text-transform: uppercase;
+   text-align: center;
+   margin: 20px 0;
+}
+
+.about--bg {
+   background-color: transparent !important;
+}
+
+
+
+.partner-wrapper {
+   background: #F8F8F8;
+   width: 100%;
+
+}
+
+#partners {
+   @include grid;
+   justify-content: center;
+
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+   gap: 0px;
+
+   &-0 {
+
+
+      grid-row-start: 1;
+      grid-column-start: 1;
+
+      grid-row-end: 2;
+      grid-column-end: 2;
+
+
+   }
+
+   &-1 {
+
+      grid-row-start: 1;
+      grid-column-start: 2;
+
+      grid-row-end: 2;
+      grid-column-end: 3;
+
+
+   }
+
+   &-2 {
+
+
+      grid-row-start: 1;
+      grid-column-start: 3;
+
+      grid-row-end: 2;
+      grid-column-end: 4;
+
+   }
+
+   &-3 {
+
+
+      grid-row-start: 1;
+      grid-column-start: 4;
+
+      grid-row-end: 2;
+      grid-column-end: 5;
+
+   }
+
+   &-4 {
+
+
+      grid-row-start: 1;
+      grid-column-start: 5;
+
+      grid-row-end: 2;
+      grid-column-end: 6;
+
+   }
+
+   &-5 {
+
+
+      grid-row-start: 1;
+      grid-column-start: 6;
+
+      grid-row-end: 2;
+      grid-column-end: 7;
+
+   }
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+
+   #partners {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      gap: 0px;
+
+      &-0 {
+
+
+         grid-row-start: 1;
+         grid-column-start: 1;
+
+         grid-row-end: 2;
+         grid-column-end: 2;
+
+      }
+
+      &-1 {
+
+         grid-row-start: 1;
+         grid-column-start: 3;
+
+         grid-row-end: 2;
+         grid-column-end: 4;
+
+
+
+      }
+
+
+      &-2 {
+
+         grid-row-start: 3;
+         grid-column-start: 3;
+
+         grid-row-end: 4;
+         grid-column-end: 4;
+
+      }
+
+
+      &-3 {
+
+         grid-row-start: 3;
+         grid-column-start: 1;
+
+         grid-row-end: 4;
+         grid-column-end: 2;
+
+      }
+
+
+      &-4 {
+         grid-row-start: 2;
+         grid-column-start: 2;
+
+         grid-row-end: 3;
+         grid-column-end: 3;
+
+      }
+
+      &-5 {
+
+         grid-row-start: 4;
+         grid-column-start: 2;
+
+         grid-row-end: 5;
+         grid-column-end: 3;
+
+      }
+
+
+      &-6 {
+
+         grid-row-start: 4;
+         grid-column-start: 2;
+
+         grid-row-end: 5;
+         grid-column-end: 3;
+
+      }
+
+      &_img {
+         max-width: 110px;
+      }
+   
+
+   }
+
+
+
+
+
+}

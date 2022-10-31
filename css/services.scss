@@ -5,13 +5,14 @@
     flex-wrap: wrap;
 
 
-    
+
 }
+
 .card_item {
-width: 33%;
-display: flex;
-margin-bottom: 200px;
-align-items: flex-start;
+    width: 33%;
+    display: flex;
+    margin-bottom: 200px;
+    align-items: flex-start;
 
 }
 
@@ -20,3 +21,40 @@ align-items: flex-start;
 }
 
 
+.section-item .swiper-pagination {
+    display: none;
+}
+
+
+
+@media screen and (max-width:320px) {
+    .card_item {
+        width: 100%;
+        margin-bottom: 45px;
+
+
+        img {
+            max-width: 57px;
+        }
+    }
+
+
+    .section-item .swiper-pagination {
+        display: block;
+    }
+
+
+
+    .description .title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .description .text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+   
+}

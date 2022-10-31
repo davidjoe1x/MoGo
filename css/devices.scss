@@ -1,4 +1,4 @@
-/* Devices */ 
+/* Devices */
 
 
 
@@ -7,36 +7,68 @@
 .device {
     position: relative;
 
-&_content {
+    &_content {
+
+        position: absolute;
+        top: 23px;
+        left: 267px;
+        border-radius: 10px;
+        max-width: 640px;
+    }
+
+    &_phone {
+        position: absolute;
+        top: 220px;
+        right: 200px;
+        z-index: 3;
+    }
+
+
+    &_tablet {
+        position: relative;
+        z-index: 2;
+
+    }
+
+
+}
+
+
+@media screen and (max-width:320px) {
+
+
+    .device {
+        &_tablet {
+            width: 100%;
     
-    position: absolute;
-    top: 23px;
-    left: 267px;
-    border-radius: 10px;
-    max-width: 640px;
-}
+        }
 
-&_phone {
-    position: absolute;
-    top: 220px;
-    right: 200px;
-    z-index: 3;
-}
+        &_content {
+            width: 100%;
+        }
+
+        &_phone {
+            width: 100%;
+            max-width: 58px;
+            top: 45%;
+            left: 55%;
+        }
 
 
-&_tablet {
-    position: relative;
-    z-index: 2;
+        &_content {
+
+            max-width: 160px;
+    
+            top: 9%;
+            left: 23%;
+        }
+    
+    
+
+    }
+    
+    
+    
+
     
 }
-
-
-}
-
-
-
-
-
-
-
-

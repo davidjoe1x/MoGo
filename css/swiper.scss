@@ -1,0 +1,182 @@
+@import '/css/style.scss';
+/* Slider-swiper*/
+
+.slider_services {
+  background: #F8F8F8;
+}
+
+
+.swiper {
+  width: 100%;
+  margin-top: 115px;
+
+
+
+
+  &--inner {
+    margin: 0;
+  }
+
+
+  &-slide {
+    padding: 30px;
+  }
+
+
+  &-wrapper {
+    padding: 40px;
+
+  }
+
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  &-pagination {
+    margin: auto;
+  }
+
+  &-slide {
+
+    align-items: center;
+
+
+  }
+
+
+  &-pagination-bullet {
+    margin: 0 15px !important;
+  }
+
+
+}
+
+
+
+
+
+
+
+.slider {
+
+  &_text {
+    position: relative;
+    max-width: 770px;
+    margin: auto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A9AFB1;
+
+
+  }
+
+  &_text::after {
+
+    display: block;
+    content: "";
+    width: 100%;
+    max-width: 70px;
+    height: 4px;
+    background: #F38281;
+    margin: 30px 0 0;
+
+
+
+  }
+
+  &_name {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+
+
+
+@media screen and (max-width:320px) {
+
+
+
+
+  .swiper {
+
+    &-img-1 {
+      display: none;
+    }
+
+    &-button-prev {
+      display: none;
+    }
+
+
+    &-button-next {
+      display: none;
+    }
+
+    &-content img {
+      margin-bottom: 42px;
+    }
+
+    &-wrapper {
+      padding: 0;
+    }
+
+
+    &-pagination {
+      max-width: 320px;
+    }
+
+    &-pagination-bullet {
+      width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 45px));
+
+      &:after {
+        width: 100%;
+    }
+  }
+}
+
+
+  
+
+  .slider {
+
+    &_name {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      top: 87%;
+      left: 42%;
+    }
+
+
+    &_text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+
+  }
+
+
+  /* Custom Slider Pagination */ 
+
+  .slider_services {
+    @include custom-swiper;
+  }
+
+  .slider-works {
+    @include custom-swiper;
+  }
+
+}
