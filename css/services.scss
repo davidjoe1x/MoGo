@@ -6,18 +6,19 @@
 
 
 
-}
+    &_item {
+        width: 33%;
+        display: flex;
+        margin-bottom: 200px;
+        align-items: flex-start;
 
-.card_item {
-    width: 33%;
-    display: flex;
-    margin-bottom: 200px;
-    align-items: flex-start;
+        img {
+            margin-right: 34px;
+        }
+        
+    
+    }
 
-}
-
-.card_item img {
-    margin-right: 34px;
 }
 
 
@@ -28,16 +29,18 @@
 
 
 @media screen and (max-width:320px) {
-    .card_item {
-        width: 100%;
-        margin-bottom: 45px;
 
+    .cards {
+        &_item {
+            width: 100%;
+            margin-bottom: 45px;
+    
+    
+            img {
+                max-width: 57px;
+            }
 
-        img {
-            max-width: 57px;
-        }
     }
-
 
     .section-item .swiper-pagination {
         display: block;
@@ -57,4 +60,5 @@
 
 
    
+}
 }

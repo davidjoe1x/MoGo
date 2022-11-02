@@ -17,34 +17,37 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    MoGo
-                </div>
-
-                <div class="header-burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <nav class="nav">
-                    <ul>
-                        <li><a class="nav_link" href="#">About</a></li>
-                        <li><a class="nav_link" href="#">Service</a></li>
-                        <li><a class="nav_link" href="#">Work</a></li>
-                        <li><a class="nav_link" href="#">Blog</a></li>
-                        <li><a class="nav_link" href="#">Contact</a></li>
-
-                        <a href="#">
-                            <img class="nav_icon" src="/assets/images/icons/cart.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="nav_icon" src="/assets/images/icons/search.svg" alt="">
-                        </a>
+            <nav class="navbar">
+                <div class="container">
+                  <div class="navbar__wrap">
+                    <div class="logo">
+                        MoGo
+                    </div>
+                    <ul class="menu" id="menu">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Work</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <a href="#">
+                        <img class="nav_icon" src="/assets/images/icons/cart.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="nav_icon" src="/assets/images/icons/search.svg" alt="">
+                    </a>
                     </ul>
-                </nav>
-            </div>
+          
+                    <div class="hamb">
+                      <div class="hamb__field" id="hamb">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                
+              </nav>
+              <div class="popup" id="popup"></div>
         </div>
     </header>
 
@@ -60,7 +63,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <h2 class="intro_subtitle">Creative Template</h2>
-                            <div class="intro_title_item">
+                            <div class="intro_wrap">
                                 <h1 class="intro_title"><span>Welcome</span> to MoGo</h1>
                             </div>
                             <button class="intro_button">Learn More</button>
@@ -96,11 +99,11 @@
                 </div>
 
 
-                <div class="slider">
-                    <div class="slider_item"><span>01</span> intro</div>
-                    <div class="slider_item"><span>02</span> work</div>
-                    <div class="slider_item"><span>03</span> about</div>
-                    <div class="slider_item"><span>04</span>contacts</div>
+                <div class="slider-content">
+                    <div class="slider-content-item"><span>01</span> intro</div>
+                    <div class="slider-content-item"><span>02</span> work</div>
+                    <div class="slider-content-item"><span>03</span> about</div>
+                    <div class="slider-content-item"><span>04</span>contacts</div>
                 </div>
             </div>
 
@@ -165,32 +168,32 @@
     <!-- Stat -->
     <div class="stat">
         <div class="container">
-            <div class="counter">
-                <div id="item-0">
+            <div id="counter">
+                <div id="counter-item-0">
                     <p class="counter_number">42</p>
                     <p class="counter_text">Lorem ipsum</p>
 
 
                 </div>
-                <div id="item-1">
+                <div id="counter-item-1">
 
                     <p class="counter_number">123</p>
                     <p class="counter_text">Lorem ipsum</p>
 
                 </div>
-                <div id="item-2">
+                <div id="counter-item-2">
 
                     <p class="counter_number">15</p>
                     <p class="counter_text">Lorem ipsum</p>
 
                 </div>
-                <div id="item-3">
+                <div id="counter-item-3">
 
                     <p class="counter_number">99</p>
                     <p class="counter_text">Lorem ipsum</p>
 
                 </div>
-                <div id="item-4">
+                <div id="counter-item-4">
 
                     <p class="counter_number">24</p>
                     <p class="counter_text">Lorem ipsum</p>
@@ -214,12 +217,8 @@
 
 
             <div class="cards">
-                <div class="card_item">
-
+                <div class="cards_item">
                     <img src="/assets/images/icons/icons-1.svg">
-
-
-
                     <div class="description">
                         <p class="title"> photography</p>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -228,7 +227,7 @@
 
                 </div>
 
-                <div class="card_item">
+                <div class="cards_item">
                     <img src="/assets/images/icons/icons-2.svg">
                     <div class="description">
                         <p class="title"> web design</p>
@@ -239,7 +238,7 @@
                 </div>
 
 
-                <div class="card_item">
+                <div class="cards_item">
                     <img src="/assets/images/icons/icons-3.svg">
                     <div class="description">
                         <p class="title"> creativity</p>
@@ -250,7 +249,7 @@
                 </div>
 
 
-                <div class="card_item">
+                <div class="cards_item">
                     <img src="/assets/images/icons/icons-4.svg">
                     <div class="description">
                         <p class="title"> seo</p>
@@ -261,7 +260,7 @@
                 </div>
 
 
-                <div class="card_item">
+                <div class="cards_item">
                     <img src="/assets/images/icons/icons-5.svg">
                     <div class="description">
                         <p class="title"> css/html</p>
@@ -272,7 +271,7 @@
                 </div>
 
 
-                <div class="card_item">
+                <div class="cards_item">
                     <img src="/assets/images/icons/icons-6.svg">
                     <div class="description">
                         <p class="title"> digital</p>
@@ -1164,6 +1163,7 @@
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/burger.js"></script>
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
     <script src="swiper/swiper-bundle.min.js"></script>
     <script src="js/swiper-init.js"></script>
